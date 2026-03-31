@@ -20,3 +20,15 @@ studentDB.forEach((student) =>  {
      `; 
         container.innerHTML += cardHTML;
     })
+    const loginBtn = document.getElementById('loginBtn');
+const passwordInput = document.getElementById('adminPassword');
+
+loginBtn.addEventListener('click', () => {
+    // สมมติว่ารหัสผ่านคือ 1234 (เดี๋ยวอนาคตค่อยไปเช็คกับ Firebase)
+    if (passwordInput.value === "1234") {
+        alert("เข้าสู่ระบบสำเร็จ!");
+        window.location.href = "index.html"; // คำสั่งย้ายหน้าเว็บไป index.html
+    } else {
+        alert("รหัสผ่านไม่ถูกต้องนะเพื่อน!");
+    }
+});

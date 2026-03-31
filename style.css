@@ -1,0 +1,115 @@
+/* 1. เตรียมสีหลักให้เรียกใช้ง่ายๆ (ตัวแปร CSS) */
+:root {
+  --bg-color: #f1f5f9;  /* สีพื้นหลังเทาอ่อน สบายตาตอนเช้า */
+  --card-bg: #ffffff;   /* สีพื้นหลังกล่อง (ขาว) */
+  --primary: #2563eb;   /* สีน้ำเงิน สำหรับตัวเลขสถิติ */
+  --success: #16a34a;   /* สีเขียว สำหรับป้ายสถานะ "ผ่าน" */
+}
+
+/* 2. ล้างค่าเริ่มต้นให้หน้าเว็บเนียนตา */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #333;
+  padding: 20px;
+}
+
+/* -------------------------------------
+   โซน 3: แถบสถิติด้านบน (Header) 
+-------------------------------------- */
+.dashboard-header {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;        /* ลบเหลี่ยมให้กล่องดูมนๆ */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* ใส่เงาบางๆ ให้กล่องดูลอยขึ้นมา */
+  margin-bottom: 20px;
+  
+  display: flex;              /* พระเอกของเรา! สั่งให้ของในกล่องเรียงแนวนอน */
+  justify-content: space-between; /* ดันข้อความไปซ้ายสุด สถิติไปขวาสุด */
+  align-items: center;        /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+}
+
+.stats-container {
+  display: flex;
+  gap: 20px; /* ระยะห่างระหว่างกล่องสถิติแต่ละอัน */
+}
+
+.stat-box { font-size: 1.2rem; font-weight: bold; }
+.stat-box span { color: var(--primary); font-size: 1.5rem; }
+
+/* -------------------------------------
+   โซนหลัก: แบ่งซ้าย(กล้อง) - ขวา(รายชื่อ) 
+-------------------------------------- */
+.dashboard-main {
+  display: flex; /* พระเอกออกโรงอีกแล้ว! แบ่งซ้ายขวาอัตโนมัติ */
+  gap: 20px;     /* ช่องว่างระหว่างกล้องกับรายชื่อ */
+}
+
+/* โซน 1: กล้องสแกน (ซ้าย) */
+.camera-zone {
+  flex: 2; /* ให้กล้องกินพื้นที่ 2 ส่วน (ใหญ่กว่า) */
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.video-container {
+  background-color: #000; /* พื้นหลังสีดำรอกล้องมาเปิด */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+#webcam-feed { width: 100%; display: block; }
+
+/* โซน 2: ฟีดรายชื่อ (ขวา) */
+.log-zone {
+  flex: 1; /* ให้รายชื่อกินพื้นที่ 1 ส่วน (เล็กกว่ากล้อง) */
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: 600px; /* ล็อกความสูงไว้ */
+  overflow-y: auto; /* ถ้าคนเข้าเยอะๆ ให้เลื่อนสกอร์ดูได้ */
+}
+
+.log-list {
+  list-style: none; /* เอาจุดไข่ปลาดำๆ หน้าลิสต์ออก */
+  margin-top: 15px;
+}
+
+.log-item {
+  display: flex; /* ให้ชื่อ กับ ป้ายสถานะ อยู่บรรทัดเดียวกัน */
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee; /* เส้นคั่นแต่ละคน */
+}
+
+.student-info strong { display: block; font-size: 1.1rem; }
+.student-id { color: #666; font-size: 0.9rem; }
+
+/* ป้ายสถานะสีเขียว */
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px; /* ทำให้ป้ายเป็นแคปซูลมนๆ */
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+}
+.status-badge.success { background-color: var(--success); }
+header {
+    display:flex;
+    height: 70px;
+    border-bottom: 1.6px solid #00ff33;
+    background: rgba(255, 255, 255, 0.7);
+
+}

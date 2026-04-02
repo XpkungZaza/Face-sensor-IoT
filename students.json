@@ -1,0 +1,37 @@
+[
+  {
+    "id": "S1001",
+    "name": "สมฮง",
+    "grade": "M.5/1",
+    "status": "Inactive",
+    "image_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Nattapong"
+  },
+  {
+    "id": "S1002",
+    "name": "สมชาย",
+    "grade": "M.5/1",
+    "status": "Inactive",
+    "image_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Wichaporn"
+  },
+  {
+    "id": "S1003",
+    "name": "สมหญิง",
+    "grade": "M.5/2",
+    "status": "Inactive",
+    "image_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Kittipong"
+  },
+  {
+    "id": "S1004",
+    "name": "ไบร์อันล์",
+    "grade": "M.5/2",
+    "status": "Active",
+    "image_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Supawadee"
+  },
+  {
+    "id": "S1005",
+    "name": "สมโชค",
+    "grade": "M.5/3",
+    "status": "Active",
+    "image_url": "https://api.dicebear.com/7.x/avataaars/svg?seed=Panya"
+  }
+]

@@ -200,3 +200,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initAdminDashboard();
   initWebcam();
 });
+
+

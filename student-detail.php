@@ -11,20 +11,22 @@
 <body>
 
     <nav class="navbar">
-    <a href="index.html" class="navbar-brand-container">
-        <img src="image/tharit-face-scan.jpg" alt="Logo" class="logo-img">
-        <span class="navbar-brand">Smart-Bus-Guard</span>
-    </a>
+        <a href="index.php" class="navbar-brand-container">
+            <img src="image/tharit-face-scan.jpg" alt="Logo" class="logo-img">
+            <span class="navbar-brand">Smart-Bus-Guard</span>
+        </a>
     
-    <ul class="nav-links">
-        <li><a href="index.php" class="active">Dashboard</a></li>
-        <li><a href="id-list.php">Students</a></li>
-        <li><a href="user-info.php">Admin</a></li>
-        <li><a href="login.php">Logout</a></li>
-    </ul>
-
-    
+        <ul class="nav-links">
+            <li><a href="index.php">Dashboard</a></li>
+            <li><a href="id-list.php">Students</a></li>
+            <li><a href="all-status.php" class="active">All Class</a></li>
+            <li><a href="class-detail.php">Class Details</a></li>
+            <li><a href="user-info.php">Admin</a></li>
+            <li><a href="login.php">Logout</a></li>
+        </ul>
     </nav>
+
+
     <div class="container">
         <div style="margin-bottom: 2rem;">
             <a href="id-list.html" style="text-decoration: none; color: var(--text-muted); font-weight: 500;">&larr; Back to Students</a>

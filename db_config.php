@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "thariti_smartbusguard"; 
-$pass = "smartbusguard090";
+$user = "root"; 
+$pass = "";
 $db   = "thariti_smartbusguard";
 
 $conn = new mysqli($host, $user, $pass, $db);
